@@ -12,7 +12,7 @@ fun main() {
         1 to 2
     )
 
-    val answer = slopes.fold(1) { answer, slope ->
+    val answer: Long = slopes.fold(1) { answer, slope ->
         answer * treeCount(lines, slope.first, slope.second)
     }
 
