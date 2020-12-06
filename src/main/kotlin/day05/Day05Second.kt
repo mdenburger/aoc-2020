@@ -1,3 +1,5 @@
+package day05
+
 import java.io.File
 
 fun main() = println(
@@ -14,4 +16,4 @@ fun main() = println(
 )
 
 private fun String.asNumber(symbols: String) =
-    Integer.parseInt(map { symbols.indexOf(it).toString() }.joinToString(""), symbols.length)
+    map { symbols.indexOf(it).toString() }.joinToString("").toInt(symbols.length)
